@@ -14,18 +14,18 @@ import {
 import BackgroundImg from '../../images/LogoVogall.png';
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/"><img src={BackgroundImg} /></NavLogo>
-                    <MoblieIcon>
+                    <MoblieIcon onClick={toggle}>
                         <FaBars />
                     </MoblieIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="instituciona">Institucional</NavLinks>
+                            <NavLinks to="institucional">Institucional</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="publicacoes">Publicacões</NavLinks>
