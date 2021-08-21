@@ -9,19 +9,25 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="institucional">
+                    <SidebarLink to="institucional" onClick={toggle}>
                         Institucional
                     </SidebarLink>
-                    <SidebarLink to="publicacoes">
+                    <SidebarLink to="publicacoes" onClick={toggle}>
                         Publicacões
                     </SidebarLink>
-                    <SidebarLink to="blog">
+                    <SidebarLink to="blog" onClick={toggle}>
                         Blog
+                    </SidebarLink>
+                    <SidebarLink to="blog" onClick={toggle}>
+                        Contato
+                    </SidebarLink>
+                    <SidebarLink to="blog" onClick={toggle}>
+                        Loja
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/contact">
-                        Contato
+                    <SidebarRoute to="/singup">
+                        Entrar
                     </SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
